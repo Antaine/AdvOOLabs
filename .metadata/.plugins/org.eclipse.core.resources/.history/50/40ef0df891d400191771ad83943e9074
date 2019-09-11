@@ -1,0 +1,16 @@
+package ie.gmit.sw;
+
+public class Runner {
+	
+	public static void main(String[] args) throws Throwable
+	{
+		
+		int j = System.in.read();
+		Person p = null;
+				for(int i = 0; i<1000000000;i++)
+		{
+			p = new Person(i);
+		}
+	}
+
+}
