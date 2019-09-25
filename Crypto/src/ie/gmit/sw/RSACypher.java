@@ -10,7 +10,7 @@ public class RSACypher extends AbstractCypher {
 	private KeyPair keyRing;
 
 	public RSACypher() throws Throwable {
-		super();
+		super(Cipher.getInstance("RSA/ECB/PKCS1Padding"));
 		KeyPairGenerator keyGen = KeyPairGenerator.getInstance("RSA");
 		keyGen.initialize(2048);
 		keyRing = keyGen.generateKeyPair();
